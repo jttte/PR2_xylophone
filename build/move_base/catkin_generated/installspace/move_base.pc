@@ -1,0 +1,8 @@
+prefix=/home/cl3295/challenge_problem_1-master/install
+
+Name: move_base
+Description: Description of move_base
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/cl3295/challenge_problem_1-master/install/lib 
+Requires: 

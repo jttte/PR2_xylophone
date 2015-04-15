@@ -1,0 +1,8 @@
+prefix=/home/cl3295/challenge_problem_1-master/install
+
+Name: system_launch
+Description: Description of system_launch
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/cl3295/challenge_problem_1-master/install/lib 
+Requires: 
