@@ -33,8 +33,8 @@ class Arm:
     
 def main():
 	arm = Arm('l_arm')
-	arm.move([0.1]*7)
-	#arm.move([-0.1]*7)
+	#arm.move([0.1]*7)
+	arm.move([-0.1]*7)
      
        
 if __name__ == '__main__':
