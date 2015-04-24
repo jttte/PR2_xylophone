@@ -88,7 +88,7 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-# include_directories(include)
+include_directories(include)
 
 ## Declare a cpp library
 # add_library(move_gripper
@@ -96,14 +96,18 @@ catkin_package(
 # )
 
 ## Declare a cpp executable
-add_executable(move_gripper src/gripper.cpp)
+add_executable(open_gripper src/open_gripper.cpp)
+add_executable(close_gripper src/close_gripper.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(move_gripper_node move_gripper_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
- target_link_libraries(move_gripper
+ target_link_libraries(open_gripper
+   ${catkin_LIBRARIES}
+)
+ target_link_libraries(close_gripper
    ${catkin_LIBRARIES}
 )
 

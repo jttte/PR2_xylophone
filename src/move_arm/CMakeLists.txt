@@ -89,6 +89,7 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(${EIGEN_INCLUDE_DIRS})
+include_directories(include)
 
 ## Declare a cpp library
 # add_library(move_arm
@@ -97,6 +98,7 @@ include_directories(${EIGEN_INCLUDE_DIRS})
 
 ## Declare a cpp executable
 add_executable(move_arm src/move_arm.cpp)
+#add_executable(lift_arm src/lift_arm.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -106,6 +108,9 @@ add_executable(move_arm src/move_arm.cpp)
 target_link_libraries(move_arm
    ${catkin_LIBRARIES}
  )
+#target_link_libraries(lift_arm
+#   ${catkin_LIBRARIES}
+# )
 
 #############
 ## Install ##

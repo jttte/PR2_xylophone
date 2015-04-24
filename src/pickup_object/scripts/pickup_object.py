@@ -1,6 +1,5 @@
 #!/usr/bin/env python
- erererimport roslib;
-#roslib.load_manifest('pr2_gripper_reactive_approach')
+import roslib
 from pr2_controllers_msgs.msg import JointTrajectoryAction, JointTrajectoryGoal
 from trajectory_msgs.msg import JointTrajectoryPoint
 import actionlib
@@ -16,7 +15,7 @@ class Arm:
 		self.jta.wait_for_server()
 		rospy.loginfo('Found joint trajectory action!')
     
-	def move(self, angles):0
+	def move(self, angles):
 		goal = JointTrajectoryGoal()
 		char = self.name[0] #either 'r' or 'l'
 		goal.trajectory.joint_names = [char+'_shoulder_pan_joint',
@@ -33,10 +32,11 @@ class Arm:
 		self.jta.send_goal_and_wait(goal)
     
 def main():
-	arm = Arm('r_arm')
-	arm.move([0.1]*7)
+	arm = Arm('l_arm')
+	#arm.move([0.1]*7)
+	arm.move([-0.1]*7)
      
        
 if __name__ == '__main__':
-	rospy.init_node('joint_position_tester')
+	rospy.init_node('lift_right_arm_tester')
 	main()

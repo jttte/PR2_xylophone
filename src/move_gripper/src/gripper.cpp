@@ -6,14 +6,14 @@
 class Gripper{
 private:
   ros::NodeHandle nh_;
-  ros::Publisher r_gripper_;
+  ros::Publisher l_gripper_;
   tf::TransformListener listener_;
 
 public:
   //Action client initialization
   Gripper(ros::NodeHandle &nh){
     nh_ = nh;
-    r_gripper_ = nh_.advertise<pr2_controllers_msgs::Pr2GripperCommand>("/r_gripper_controller/command", 1);
+    l_gripper_ = nh_.advertise<pr2_controllers_msgs::Pr2GripperCommand>("/l_gripper_controller/command", 1);
   }
 
   ~Gripper(){
@@ -26,7 +26,7 @@ public:
     ros::Duration(0.5).sleep();
 
     //wait for the listener to get the first message
-    listener_.waitForTransform("base_footprint", "r_gripper_l_finger_tip_frame", 
+    listener_.waitForTransform("base_footprint", "l_gripper_l_finger_tip_frame", 
                                ros::Time(0), ros::Duration(1.0));
     
     //we will record transforms here
@@ -34,7 +34,7 @@ public:
     tf::StampedTransform current_transform;
 
     //record the starting transform from the gripper to the base frame
-    listener_.lookupTransform("base_footprint", "r_gripper_l_finger_tip_frame", 
+    listener_.lookupTransform("base_footprint", "l_gripper_l_finger_tip_frame", 
                               ros::Time(0), start_transform);
 
     bool done = false;
@@ -47,13 +47,13 @@ public:
 
     while (!done && nh_.ok())
     {
-      r_gripper_.publish(gripper_cmd);
+      l_gripper_.publish(gripper_cmd);
 
       rate.sleep();
       //get the current transform
       try
       {
-        listener_.lookupTransform("base_footprint", "r_gripper_l_finger_tip_frame", 
+        listener_.lookupTransform("base_footprint", "l_gripper_l_finger_tip_frame", 
                                   ros::Time(0), current_transform);
       }
       catch (tf::TransformException ex)
@@ -78,7 +78,7 @@ public:
     ros::Duration(0.5).sleep();
 
     //wait for the listener to get the first message
-    listener_.waitForTransform("base_footprint", "r_gripper_l_finger_tip_frame", 
+    listener_.waitForTransform("base_footprint", "l_gripper_l_finger_tip_frame", 
                                ros::Time(0), ros::Duration(1.0));
     
     //we will record transforms here
@@ -86,7 +86,7 @@ public:
     tf::StampedTransform current_transform;
 
     //record the starting transform from the gripper to the base frame
-    listener_.lookupTransform("base_footprint", "r_gripper_l_finger_tip_frame", 
+    listener_.lookupTransform("base_footprint", "l_gripper_l_finger_tip_frame", 
                               ros::Time(0), start_transform);
 
     bool done = false;
@@ -100,13 +100,13 @@ public:
     double dist_moved;
     while (!done && nh_.ok())
     {
-      r_gripper_.publish(gripper_cmd);
+      l_gripper_.publish(gripper_cmd);
 
       rate.sleep();
       //get the current transform
       try
       {
-        listener_.lookupTransform("base_footprint", "r_gripper_l_finger_tip_frame", 
+        listener_.lookupTransform("base_footprint", "l_gripper_l_finger_tip_frame", 
                                   ros::Time(0), current_transform);
       }
       catch (tf::TransformException ex)
@@ -135,7 +135,6 @@ int main(int argc, char** argv){
 
   Gripper gripper(nh);
 
-  gripper.open();
   gripper.close();
 
   return 0;
