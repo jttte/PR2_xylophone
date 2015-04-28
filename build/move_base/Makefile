@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cl3295/challenge_problem_1-master/src
+CMAKE_SOURCE_DIR = /home/cl3295/robot-test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cl3295/challenge_problem_1-master/build
+CMAKE_BINARY_DIR = /home/cl3295/robot-test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cl3295/challenge_problem_1-master/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cl3295/challenge_problem_1-master/build/CMakeFiles /home/cl3295/challenge_problem_1-master/build/move_base/CMakeFiles/progress.marks
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cl3295/challenge_problem_1-master/build/CMakeFiles 0
+	cd /home/cl3295/robot-test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cl3295/robot-test/build/CMakeFiles /home/cl3295/robot-test/build/move_base/CMakeFiles/progress.marks
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cl3295/robot-test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/clean
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,22 +136,36 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/preinstall
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/preinstall
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cl3295/challenge_problem_1-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cl3295/robot-test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
+move_base/CMakeFiles/move_backward.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/CMakeFiles/move_backward.dir/rule
+.PHONY : move_base/CMakeFiles/move_backward.dir/rule
+
+# Convenience name for target.
+move_backward: move_base/CMakeFiles/move_backward.dir/rule
+.PHONY : move_backward
+
+# fast build rule for target.
+move_backward/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_backward.dir/build.make move_base/CMakeFiles/move_backward.dir/build
+.PHONY : move_backward/fast
+
+# Convenience name for target.
 move_base/CMakeFiles/move_base.dir/rule:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/CMakeFiles/move_base.dir/rule
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/CMakeFiles/move_base.dir/rule
 .PHONY : move_base/CMakeFiles/move_base.dir/rule
 
 # Convenience name for target.
@@ -160,15 +174,53 @@ move_base: move_base/CMakeFiles/move_base.dir/rule
 
 # fast build rule for target.
 move_base/fast:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f move_base/CMakeFiles/move_base.dir/build.make move_base/CMakeFiles/move_base.dir/build
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_base.dir/build.make move_base/CMakeFiles/move_base.dir/build
 .PHONY : move_base/fast
+
+# Convenience name for target.
+move_base/CMakeFiles/move_forward.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_base/CMakeFiles/move_forward.dir/rule
+.PHONY : move_base/CMakeFiles/move_forward.dir/rule
+
+# Convenience name for target.
+move_forward: move_base/CMakeFiles/move_forward.dir/rule
+.PHONY : move_forward
+
+# fast build rule for target.
+move_forward/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_forward.dir/build.make move_base/CMakeFiles/move_forward.dir/build
+.PHONY : move_forward/fast
+
+src/move_backward.o: src/move_backward.cpp.o
+.PHONY : src/move_backward.o
+
+# target to build an object file
+src/move_backward.cpp.o:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_backward.dir/build.make move_base/CMakeFiles/move_backward.dir/src/move_backward.cpp.o
+.PHONY : src/move_backward.cpp.o
+
+src/move_backward.i: src/move_backward.cpp.i
+.PHONY : src/move_backward.i
+
+# target to preprocess a source file
+src/move_backward.cpp.i:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_backward.dir/build.make move_base/CMakeFiles/move_backward.dir/src/move_backward.cpp.i
+.PHONY : src/move_backward.cpp.i
+
+src/move_backward.s: src/move_backward.cpp.s
+.PHONY : src/move_backward.s
+
+# target to generate assembly for a file
+src/move_backward.cpp.s:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_backward.dir/build.make move_base/CMakeFiles/move_backward.dir/src/move_backward.cpp.s
+.PHONY : src/move_backward.cpp.s
 
 src/move_base.o: src/move_base.cpp.o
 .PHONY : src/move_base.o
 
 # target to build an object file
 src/move_base.cpp.o:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f move_base/CMakeFiles/move_base.dir/build.make move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_base.dir/build.make move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o
 .PHONY : src/move_base.cpp.o
 
 src/move_base.i: src/move_base.cpp.i
@@ -176,7 +228,7 @@ src/move_base.i: src/move_base.cpp.i
 
 # target to preprocess a source file
 src/move_base.cpp.i:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f move_base/CMakeFiles/move_base.dir/build.make move_base/CMakeFiles/move_base.dir/src/move_base.cpp.i
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_base.dir/build.make move_base/CMakeFiles/move_base.dir/src/move_base.cpp.i
 .PHONY : src/move_base.cpp.i
 
 src/move_base.s: src/move_base.cpp.s
@@ -184,8 +236,32 @@ src/move_base.s: src/move_base.cpp.s
 
 # target to generate assembly for a file
 src/move_base.cpp.s:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f move_base/CMakeFiles/move_base.dir/build.make move_base/CMakeFiles/move_base.dir/src/move_base.cpp.s
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_base.dir/build.make move_base/CMakeFiles/move_base.dir/src/move_base.cpp.s
 .PHONY : src/move_base.cpp.s
+
+src/move_forward.o: src/move_forward.cpp.o
+.PHONY : src/move_forward.o
+
+# target to build an object file
+src/move_forward.cpp.o:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_forward.dir/build.make move_base/CMakeFiles/move_forward.dir/src/move_forward.cpp.o
+.PHONY : src/move_forward.cpp.o
+
+src/move_forward.i: src/move_forward.cpp.i
+.PHONY : src/move_forward.i
+
+# target to preprocess a source file
+src/move_forward.cpp.i:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_forward.dir/build.make move_base/CMakeFiles/move_forward.dir/src/move_forward.cpp.i
+.PHONY : src/move_forward.cpp.i
+
+src/move_forward.s: src/move_forward.cpp.s
+.PHONY : src/move_forward.s
+
+# target to generate assembly for a file
+src/move_forward.cpp.s:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_base/CMakeFiles/move_forward.dir/build.make move_base/CMakeFiles/move_forward.dir/src/move_forward.cpp.s
+.PHONY : src/move_forward.cpp.s
 
 # Help Target
 help:
@@ -198,12 +274,20 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... move_backward"
 	@echo "... move_base"
+	@echo "... move_forward"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... src/move_backward.o"
+	@echo "... src/move_backward.i"
+	@echo "... src/move_backward.s"
 	@echo "... src/move_base.o"
 	@echo "... src/move_base.i"
 	@echo "... src/move_base.s"
+	@echo "... src/move_forward.o"
+	@echo "... src/move_forward.i"
+	@echo "... src/move_forward.s"
 .PHONY : help
 
 
@@ -215,6 +299,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cl3295/challenge_problem_1-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cl3295/robot-test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

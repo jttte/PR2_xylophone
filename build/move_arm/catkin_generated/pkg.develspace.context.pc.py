@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "move_arm"
-PROJECT_SPACE_DIR = "/home/cl3295/challenge_problem_1-master/devel"
+PROJECT_SPACE_DIR = "/home/cl3295/robot-test/devel"
 PROJECT_VERSION = "0.0.0"

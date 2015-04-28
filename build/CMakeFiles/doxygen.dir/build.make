@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cl3295/challenge_problem_1-master/src
+CMAKE_SOURCE_DIR = /home/cl3295/robot-test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cl3295/challenge_problem_1-master/build
+CMAKE_BINARY_DIR = /home/cl3295/robot-test/build
 
 # Utility rule file for doxygen.
 
@@ -46,7 +46,7 @@ CMAKE_BINARY_DIR = /home/cl3295/challenge_problem_1-master/build
 include CMakeFiles/doxygen.dir/progress.make
 
 CMakeFiles/doxygen:
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cl3295/challenge_problem_1-master/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cl3295/robot-test/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "doxygen found"
 
 doxygen: CMakeFiles/doxygen
@@ -62,6 +62,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/cl3295/challenge_problem_1-master/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cl3295/challenge_problem_1-master/src /home/cl3295/challenge_problem_1-master/src /home/cl3295/challenge_problem_1-master/build /home/cl3295/challenge_problem_1-master/build /home/cl3295/challenge_problem_1-master/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cl3295/robot-test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cl3295/robot-test/src /home/cl3295/robot-test/src /home/cl3295/robot-test/build /home/cl3295/robot-test/build /home/cl3295/robot-test/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

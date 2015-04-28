@@ -1,7 +1,7 @@
 <robot name="stick">
   <link name="stick">
     <inertial>
-      <mass value="0.20" />
+      <mass value="0.00" />
       <!-- center of mass (com) is defined w.r.t. link local coordinate system -->
       <origin xyz="0 0 0.06" /> 
       <inertia  ixx="1" ixy="0.0"  ixz="0.0"  iyy="1"  iyz="0.0"  izz="1" />

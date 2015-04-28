@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cl3295/challenge_problem_1-master/src
+CMAKE_SOURCE_DIR = /home/cl3295/robot-test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cl3295/challenge_problem_1-master/build
+CMAKE_BINARY_DIR = /home/cl3295/robot-test/build
 
 # Include any dependencies generated for this target.
 include move_arm/CMakeFiles/move_arm.dir/depend.make
@@ -50,18 +50,18 @@ include move_arm/CMakeFiles/move_arm.dir/progress.make
 include move_arm/CMakeFiles/move_arm.dir/flags.make
 
 move_arm/CMakeFiles/move_arm.dir/src/move_arm.cpp.o: move_arm/CMakeFiles/move_arm.dir/flags.make
-move_arm/CMakeFiles/move_arm.dir/src/move_arm.cpp.o: /home/cl3295/challenge_problem_1-master/src/move_arm/src/move_arm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cl3295/challenge_problem_1-master/build/CMakeFiles $(CMAKE_PROGRESS_1)
+move_arm/CMakeFiles/move_arm.dir/src/move_arm.cpp.o: /home/cl3295/robot-test/src/move_arm/src/move_arm.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cl3295/robot-test/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object move_arm/CMakeFiles/move_arm.dir/src/move_arm.cpp.o"
-	cd /home/cl3295/challenge_problem_1-master/build/move_arm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/move_arm.dir/src/move_arm.cpp.o -c /home/cl3295/challenge_problem_1-master/src/move_arm/src/move_arm.cpp
+	cd /home/cl3295/robot-test/build/move_arm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/move_arm.dir/src/move_arm.cpp.o -c /home/cl3295/robot-test/src/move_arm/src/move_arm.cpp
 
 move_arm/CMakeFiles/move_arm.dir/src/move_arm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/move_arm.dir/src/move_arm.cpp.i"
-	cd /home/cl3295/challenge_problem_1-master/build/move_arm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/cl3295/challenge_problem_1-master/src/move_arm/src/move_arm.cpp > CMakeFiles/move_arm.dir/src/move_arm.cpp.i
+	cd /home/cl3295/robot-test/build/move_arm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/cl3295/robot-test/src/move_arm/src/move_arm.cpp > CMakeFiles/move_arm.dir/src/move_arm.cpp.i
 
 move_arm/CMakeFiles/move_arm.dir/src/move_arm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/move_arm.dir/src/move_arm.cpp.s"
-	cd /home/cl3295/challenge_problem_1-master/build/move_arm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/cl3295/challenge_problem_1-master/src/move_arm/src/move_arm.cpp -o CMakeFiles/move_arm.dir/src/move_arm.cpp.s
+	cd /home/cl3295/robot-test/build/move_arm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/cl3295/robot-test/src/move_arm/src/move_arm.cpp -o CMakeFiles/move_arm.dir/src/move_arm.cpp.s
 
 move_arm/CMakeFiles/move_arm.dir/src/move_arm.cpp.o.requires:
 .PHONY : move_arm/CMakeFiles/move_arm.dir/src/move_arm.cpp.o.requires
@@ -79,107 +79,107 @@ move_arm_OBJECTS = \
 # External object files for target move_arm
 move_arm_EXTERNAL_OBJECTS =
 
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: move_arm/CMakeFiles/move_arm.dir/src/move_arm.cpp.o
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libtf.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libtf2_ros.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libactionlib.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libtf2.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_common_planning_interface_objects.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_scene_interface.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_move_group_interface.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_warehouse.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libwarehouse_ros.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_pick_place_planner.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_move_group_capabilities_base.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_rdf_loader.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_kinematics_plugin_loader.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_robot_model_loader.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_constraint_sampler_manager_loader.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_pipeline.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_trajectory_execution_manager.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_plan_execution.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_scene_monitor.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_point_containment_filter.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_occupancy_map_monitor.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_pointcloud_octomap_updater_core.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_semantic_world.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_exceptions.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_background_processing.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_kinematics_base.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_robot_model.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_transforms.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_robot_state.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_robot_trajectory.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_interface.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_collision_detection.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_collision_detection_fcl.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_kinematic_constraints.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_scene.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_constraint_samplers.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_request_adapter.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_profiler.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_trajectory_processing.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_distance_field.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_kinematics_metrics.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_dynamics_solver.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/libboost_iostreams-mt.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libgeometric_shapes.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liboctomap.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liboctomath.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libshape_tools.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libeigen_conversions.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librandom_numbers.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libkdl_parser.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liborocos-kdl.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liborocos-kdl.so.1.3.0
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liburdf.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liburdfdom_sensor.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liburdfdom_model_state.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liburdfdom_model.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liburdfdom_world.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librosconsole_bridge.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libsrdfdom.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libimage_transport.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmessage_filters.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/libtinyxml.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libclass_loader.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/libPocoFoundation.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libroscpp.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/libboost_signals-mt.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/libboost_filesystem-mt.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librosconsole.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librosconsole_log4cxx.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librosconsole_backend_interface.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/liblog4cxx.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/libboost_regex-mt.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libxmlrpcpp.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libroslib.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libroscpp_serialization.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librostime.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/libboost_date_time-mt.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/libboost_system-mt.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/libboost_thread-mt.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libcpp_common.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libconsole_bridge.so
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: move_arm/CMakeFiles/move_arm.dir/build.make
-/home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm: move_arm/CMakeFiles/move_arm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm"
-	cd /home/cl3295/challenge_problem_1-master/build/move_arm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/move_arm.dir/link.txt --verbose=$(VERBOSE)
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: move_arm/CMakeFiles/move_arm.dir/src/move_arm.cpp.o
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libtf.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libtf2_ros.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libactionlib.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libtf2.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_common_planning_interface_objects.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_scene_interface.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_move_group_interface.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_warehouse.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libwarehouse_ros.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_pick_place_planner.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_move_group_capabilities_base.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_rdf_loader.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_kinematics_plugin_loader.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_robot_model_loader.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_constraint_sampler_manager_loader.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_pipeline.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_trajectory_execution_manager.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_plan_execution.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_scene_monitor.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_point_containment_filter.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_occupancy_map_monitor.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_pointcloud_octomap_updater_core.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_semantic_world.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_exceptions.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_background_processing.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_kinematics_base.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_robot_model.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_transforms.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_robot_state.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_robot_trajectory.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_interface.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_collision_detection.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_collision_detection_fcl.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_kinematic_constraints.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_scene.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_constraint_samplers.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_planning_request_adapter.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_profiler.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_trajectory_processing.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_distance_field.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_kinematics_metrics.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmoveit_dynamics_solver.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/libboost_iostreams-mt.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libgeometric_shapes.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liboctomap.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liboctomath.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libshape_tools.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libeigen_conversions.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librandom_numbers.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libkdl_parser.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liborocos-kdl.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liborocos-kdl.so.1.3.0
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liburdf.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liburdfdom_sensor.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liburdfdom_model_state.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liburdfdom_model.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/liburdfdom_world.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librosconsole_bridge.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libsrdfdom.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libimage_transport.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libmessage_filters.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/libtinyxml.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libclass_loader.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/libPocoFoundation.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libroscpp.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/libboost_signals-mt.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/libboost_filesystem-mt.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librosconsole.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librosconsole_log4cxx.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librosconsole_backend_interface.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/liblog4cxx.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/libboost_regex-mt.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libxmlrpcpp.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libroslib.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libroscpp_serialization.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/librostime.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/libboost_date_time-mt.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/libboost_system-mt.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/libboost_thread-mt.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libcpp_common.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: /opt/ros/hydro/lib/libconsole_bridge.so
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: move_arm/CMakeFiles/move_arm.dir/build.make
+/home/cl3295/robot-test/devel/lib/move_arm/move_arm: move_arm/CMakeFiles/move_arm.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/cl3295/robot-test/devel/lib/move_arm/move_arm"
+	cd /home/cl3295/robot-test/build/move_arm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/move_arm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-move_arm/CMakeFiles/move_arm.dir/build: /home/cl3295/challenge_problem_1-master/devel/lib/move_arm/move_arm
+move_arm/CMakeFiles/move_arm.dir/build: /home/cl3295/robot-test/devel/lib/move_arm/move_arm
 .PHONY : move_arm/CMakeFiles/move_arm.dir/build
 
 move_arm/CMakeFiles/move_arm.dir/requires: move_arm/CMakeFiles/move_arm.dir/src/move_arm.cpp.o.requires
 .PHONY : move_arm/CMakeFiles/move_arm.dir/requires
 
 move_arm/CMakeFiles/move_arm.dir/clean:
-	cd /home/cl3295/challenge_problem_1-master/build/move_arm && $(CMAKE_COMMAND) -P CMakeFiles/move_arm.dir/cmake_clean.cmake
+	cd /home/cl3295/robot-test/build/move_arm && $(CMAKE_COMMAND) -P CMakeFiles/move_arm.dir/cmake_clean.cmake
 .PHONY : move_arm/CMakeFiles/move_arm.dir/clean
 
 move_arm/CMakeFiles/move_arm.dir/depend:
-	cd /home/cl3295/challenge_problem_1-master/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cl3295/challenge_problem_1-master/src /home/cl3295/challenge_problem_1-master/src/move_arm /home/cl3295/challenge_problem_1-master/build /home/cl3295/challenge_problem_1-master/build/move_arm /home/cl3295/challenge_problem_1-master/build/move_arm/CMakeFiles/move_arm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cl3295/robot-test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cl3295/robot-test/src /home/cl3295/robot-test/src/move_arm /home/cl3295/robot-test/build /home/cl3295/robot-test/build/move_arm /home/cl3295/robot-test/build/move_arm/CMakeFiles/move_arm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : move_arm/CMakeFiles/move_arm.dir/depend
 

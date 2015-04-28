@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cl3295/challenge_problem_1-master/src
+CMAKE_SOURCE_DIR = /home/cl3295/robot-test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cl3295/challenge_problem_1-master/build
+CMAKE_BINARY_DIR = /home/cl3295/robot-test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cl3295/challenge_problem_1-master/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cl3295/challenge_problem_1-master/build/CMakeFiles /home/cl3295/challenge_problem_1-master/build/move_gripper/CMakeFiles/progress.marks
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f CMakeFiles/Makefile2 move_gripper/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cl3295/challenge_problem_1-master/build/CMakeFiles 0
+	cd /home/cl3295/robot-test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cl3295/robot-test/build/CMakeFiles /home/cl3295/robot-test/build/move_gripper/CMakeFiles/progress.marks
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_gripper/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cl3295/robot-test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f CMakeFiles/Makefile2 move_gripper/clean
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_gripper/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,56 +136,94 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f CMakeFiles/Makefile2 move_gripper/preinstall
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_gripper/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f CMakeFiles/Makefile2 move_gripper/preinstall
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_gripper/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cl3295/challenge_problem_1-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cl3295/robot-test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-move_gripper/CMakeFiles/move_gripper.dir/rule:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f CMakeFiles/Makefile2 move_gripper/CMakeFiles/move_gripper.dir/rule
-.PHONY : move_gripper/CMakeFiles/move_gripper.dir/rule
+move_gripper/CMakeFiles/close_gripper.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_gripper/CMakeFiles/close_gripper.dir/rule
+.PHONY : move_gripper/CMakeFiles/close_gripper.dir/rule
 
 # Convenience name for target.
-move_gripper: move_gripper/CMakeFiles/move_gripper.dir/rule
-.PHONY : move_gripper
+close_gripper: move_gripper/CMakeFiles/close_gripper.dir/rule
+.PHONY : close_gripper
 
 # fast build rule for target.
-move_gripper/fast:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f move_gripper/CMakeFiles/move_gripper.dir/build.make move_gripper/CMakeFiles/move_gripper.dir/build
-.PHONY : move_gripper/fast
+close_gripper/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_gripper/CMakeFiles/close_gripper.dir/build.make move_gripper/CMakeFiles/close_gripper.dir/build
+.PHONY : close_gripper/fast
 
-src/gripper.o: src/gripper.cpp.o
-.PHONY : src/gripper.o
+# Convenience name for target.
+move_gripper/CMakeFiles/open_gripper.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_gripper/CMakeFiles/open_gripper.dir/rule
+.PHONY : move_gripper/CMakeFiles/open_gripper.dir/rule
+
+# Convenience name for target.
+open_gripper: move_gripper/CMakeFiles/open_gripper.dir/rule
+.PHONY : open_gripper
+
+# fast build rule for target.
+open_gripper/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_gripper/CMakeFiles/open_gripper.dir/build.make move_gripper/CMakeFiles/open_gripper.dir/build
+.PHONY : open_gripper/fast
+
+src/close_gripper.o: src/close_gripper.cpp.o
+.PHONY : src/close_gripper.o
 
 # target to build an object file
-src/gripper.cpp.o:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f move_gripper/CMakeFiles/move_gripper.dir/build.make move_gripper/CMakeFiles/move_gripper.dir/src/gripper.cpp.o
-.PHONY : src/gripper.cpp.o
+src/close_gripper.cpp.o:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_gripper/CMakeFiles/close_gripper.dir/build.make move_gripper/CMakeFiles/close_gripper.dir/src/close_gripper.cpp.o
+.PHONY : src/close_gripper.cpp.o
 
-src/gripper.i: src/gripper.cpp.i
-.PHONY : src/gripper.i
+src/close_gripper.i: src/close_gripper.cpp.i
+.PHONY : src/close_gripper.i
 
 # target to preprocess a source file
-src/gripper.cpp.i:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f move_gripper/CMakeFiles/move_gripper.dir/build.make move_gripper/CMakeFiles/move_gripper.dir/src/gripper.cpp.i
-.PHONY : src/gripper.cpp.i
+src/close_gripper.cpp.i:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_gripper/CMakeFiles/close_gripper.dir/build.make move_gripper/CMakeFiles/close_gripper.dir/src/close_gripper.cpp.i
+.PHONY : src/close_gripper.cpp.i
 
-src/gripper.s: src/gripper.cpp.s
-.PHONY : src/gripper.s
+src/close_gripper.s: src/close_gripper.cpp.s
+.PHONY : src/close_gripper.s
 
 # target to generate assembly for a file
-src/gripper.cpp.s:
-	cd /home/cl3295/challenge_problem_1-master/build && $(MAKE) -f move_gripper/CMakeFiles/move_gripper.dir/build.make move_gripper/CMakeFiles/move_gripper.dir/src/gripper.cpp.s
-.PHONY : src/gripper.cpp.s
+src/close_gripper.cpp.s:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_gripper/CMakeFiles/close_gripper.dir/build.make move_gripper/CMakeFiles/close_gripper.dir/src/close_gripper.cpp.s
+.PHONY : src/close_gripper.cpp.s
+
+src/open_gripper.o: src/open_gripper.cpp.o
+.PHONY : src/open_gripper.o
+
+# target to build an object file
+src/open_gripper.cpp.o:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_gripper/CMakeFiles/open_gripper.dir/build.make move_gripper/CMakeFiles/open_gripper.dir/src/open_gripper.cpp.o
+.PHONY : src/open_gripper.cpp.o
+
+src/open_gripper.i: src/open_gripper.cpp.i
+.PHONY : src/open_gripper.i
+
+# target to preprocess a source file
+src/open_gripper.cpp.i:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_gripper/CMakeFiles/open_gripper.dir/build.make move_gripper/CMakeFiles/open_gripper.dir/src/open_gripper.cpp.i
+.PHONY : src/open_gripper.cpp.i
+
+src/open_gripper.s: src/open_gripper.cpp.s
+.PHONY : src/open_gripper.s
+
+# target to generate assembly for a file
+src/open_gripper.cpp.s:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_gripper/CMakeFiles/open_gripper.dir/build.make move_gripper/CMakeFiles/open_gripper.dir/src/open_gripper.cpp.s
+.PHONY : src/open_gripper.cpp.s
 
 # Help Target
 help:
@@ -193,17 +231,21 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... close_gripper"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... move_gripper"
+	@echo "... open_gripper"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... src/gripper.o"
-	@echo "... src/gripper.i"
-	@echo "... src/gripper.s"
+	@echo "... src/close_gripper.o"
+	@echo "... src/close_gripper.i"
+	@echo "... src/close_gripper.s"
+	@echo "... src/open_gripper.o"
+	@echo "... src/open_gripper.i"
+	@echo "... src/open_gripper.s"
 .PHONY : help
 
 
@@ -215,6 +257,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cl3295/challenge_problem_1-master/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cl3295/robot-test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/cl3295/challenge_problem_1-master/src
+# Install script for directory: /home/cl3295/robot-test/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/cl3295/challenge_problem_1-master/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/cl3295/robot-test/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,38 +44,38 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/cl3295/challenge_problem_1-master/install/_setup_util.py")
-FILE(INSTALL DESTINATION "/home/cl3295/challenge_problem_1-master/install" TYPE PROGRAM FILES "/home/cl3295/challenge_problem_1-master/build/catkin_generated/installspace/_setup_util.py")
+   "/home/cl3295/robot-test/install/_setup_util.py")
+FILE(INSTALL DESTINATION "/home/cl3295/robot-test/install" TYPE PROGRAM FILES "/home/cl3295/robot-test/build/catkin_generated/installspace/_setup_util.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/cl3295/challenge_problem_1-master/install/env.sh")
-FILE(INSTALL DESTINATION "/home/cl3295/challenge_problem_1-master/install" TYPE PROGRAM FILES "/home/cl3295/challenge_problem_1-master/build/catkin_generated/installspace/env.sh")
+   "/home/cl3295/robot-test/install/env.sh")
+FILE(INSTALL DESTINATION "/home/cl3295/robot-test/install" TYPE PROGRAM FILES "/home/cl3295/robot-test/build/catkin_generated/installspace/env.sh")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/cl3295/challenge_problem_1-master/install/setup.bash")
-FILE(INSTALL DESTINATION "/home/cl3295/challenge_problem_1-master/install" TYPE FILE FILES "/home/cl3295/challenge_problem_1-master/build/catkin_generated/installspace/setup.bash")
+   "/home/cl3295/robot-test/install/setup.bash")
+FILE(INSTALL DESTINATION "/home/cl3295/robot-test/install" TYPE FILE FILES "/home/cl3295/robot-test/build/catkin_generated/installspace/setup.bash")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/cl3295/challenge_problem_1-master/install/setup.sh")
-FILE(INSTALL DESTINATION "/home/cl3295/challenge_problem_1-master/install" TYPE FILE FILES "/home/cl3295/challenge_problem_1-master/build/catkin_generated/installspace/setup.sh")
+   "/home/cl3295/robot-test/install/setup.sh")
+FILE(INSTALL DESTINATION "/home/cl3295/robot-test/install" TYPE FILE FILES "/home/cl3295/robot-test/build/catkin_generated/installspace/setup.sh")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/cl3295/challenge_problem_1-master/install/setup.zsh")
-FILE(INSTALL DESTINATION "/home/cl3295/challenge_problem_1-master/install" TYPE FILE FILES "/home/cl3295/challenge_problem_1-master/build/catkin_generated/installspace/setup.zsh")
+   "/home/cl3295/robot-test/install/setup.zsh")
+FILE(INSTALL DESTINATION "/home/cl3295/robot-test/install" TYPE FILE FILES "/home/cl3295/robot-test/build/catkin_generated/installspace/setup.zsh")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/cl3295/challenge_problem_1-master/install/.rosinstall")
-FILE(INSTALL DESTINATION "/home/cl3295/challenge_problem_1-master/install" TYPE FILE FILES "/home/cl3295/challenge_problem_1-master/build/catkin_generated/installspace/.rosinstall")
+   "/home/cl3295/robot-test/install/.rosinstall")
+FILE(INSTALL DESTINATION "/home/cl3295/robot-test/install" TYPE FILE FILES "/home/cl3295/robot-test/build/catkin_generated/installspace/.rosinstall")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -88,13 +88,15 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/cl3295/challenge_problem_1-master/build/gtest/cmake_install.cmake")
-  INCLUDE("/home/cl3295/challenge_problem_1-master/build/move_arm/cmake_install.cmake")
-  INCLUDE("/home/cl3295/challenge_problem_1-master/build/move_base/cmake_install.cmake")
-  INCLUDE("/home/cl3295/challenge_problem_1-master/build/move_gripper/cmake_install.cmake")
-  INCLUDE("/home/cl3295/challenge_problem_1-master/build/move_head/cmake_install.cmake")
-  INCLUDE("/home/cl3295/challenge_problem_1-master/build/pickup_object/cmake_install.cmake")
-  INCLUDE("/home/cl3295/challenge_problem_1-master/build/system_launch/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/mesh_builder-master/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/move_arm/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/move_base/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/move_gripper/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/move_head/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/pickup_object/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/system_launch/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/hit_xylophone/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -104,7 +106,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/cl3295/challenge_problem_1-master/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/cl3295/robot-test/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/cl3295/challenge_problem_1-master/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/cl3295/robot-test/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

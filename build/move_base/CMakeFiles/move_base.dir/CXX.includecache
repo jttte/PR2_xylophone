@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cl3295/challenge_problem_1-master/src/move_base/src/move_base.cpp
+/home/cl3295/robot-test/src/move_base/include/move_base.h
 iostream
 -
 ros/ros.h
@@ -15,4 +15,16 @@ geometry_msgs/Twist.h
 -
 tf/transform_listener.h
 -
+
+/home/cl3295/robot-test/src/move_base/src/move_base.cpp
+iostream
+-
+ros/ros.h
+-
+geometry_msgs/Twist.h
+-
+tf/transform_listener.h
+-
+move_base.h
+/home/cl3295/robot-test/src/move_base/src/move_base.h
 
