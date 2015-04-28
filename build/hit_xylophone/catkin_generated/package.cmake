@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "hit_xylophone")
+set(hit_xylophone_MAINTAINER "cl3295 <cl3295@todo.todo>")
+set(hit_xylophone_DEPRECATED "")
+set(hit_xylophone_VERSION "0.0.0")
+set(hit_xylophone_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(hit_xylophone_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(hit_xylophone_BUILDTOOL_DEPENDS "catkin")

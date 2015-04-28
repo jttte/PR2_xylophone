@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cl3295/robot-test/src/move_gripper/include/gripper.h
+ros/ros.h
+-
+pr2_controllers_msgs/Pr2GripperCommand.h
+-
+actionlib/client/simple_action_client.h
+-
+tf/transform_listener.h
+-
+
+/home/cl3295/robot-test/src/move_gripper/src/close_gripper.cpp
+gripper.h
+/home/cl3295/robot-test/src/move_gripper/src/gripper.h
+ros/ros.h
+-
+
