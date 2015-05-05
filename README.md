@@ -1,5 +1,5 @@
-# COMS 6998-03 HUMANOID ROBOTS, SPRING 2015
-# Columbia University
+#PR2 with Xylophone
+## Final Project of COMS 6998-03 HUMANOID ROBOTS, SPRING 2015, Columbia University
 
 
 ## Instructions
