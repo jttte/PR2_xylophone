@@ -48,7 +48,7 @@ if __name__ == '__main__':
 		arm = reader.selectArm(item)
 		shoulder_pose = reader.convertToPose(item)
 		move_actions.move_shoudler_pan(arm, shoulder_pose)
-		move_actions.move_arm_wrist(arm, shoulder_pose, -0.7)
+		move_actions.move_arm_wrist(arm, shoulder_pose, -0.7, item)
 
 	
 	'''

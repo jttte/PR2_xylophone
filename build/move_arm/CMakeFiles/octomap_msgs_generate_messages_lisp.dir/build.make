@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cl3295/challenge_problem_1-master/src
+CMAKE_SOURCE_DIR = /home/cl3295/robot-test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cl3295/challenge_problem_1-master/build
+CMAKE_BINARY_DIR = /home/cl3295/robot-test/build
 
 # Utility rule file for octomap_msgs_generate_messages_lisp.
 
@@ -56,10 +56,10 @@ move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build: octomap_msgs_
 .PHONY : move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
 
 move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean:
-	cd /home/cl3295/challenge_problem_1-master/build/move_arm && $(CMAKE_COMMAND) -P CMakeFiles/octomap_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/cl3295/robot-test/build/move_arm && $(CMAKE_COMMAND) -P CMakeFiles/octomap_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean
 
 move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/depend:
-	cd /home/cl3295/challenge_problem_1-master/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cl3295/challenge_problem_1-master/src /home/cl3295/challenge_problem_1-master/src/move_arm /home/cl3295/challenge_problem_1-master/build /home/cl3295/challenge_problem_1-master/build/move_arm /home/cl3295/challenge_problem_1-master/build/move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cl3295/robot-test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cl3295/robot-test/src /home/cl3295/robot-test/src/move_arm /home/cl3295/robot-test/build /home/cl3295/robot-test/build/move_arm /home/cl3295/robot-test/build/move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/depend
 

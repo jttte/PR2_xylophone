@@ -149,44 +149,6 @@ depend:
 	cd /home/cl3295/robot-test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-pickup_object/CMakeFiles/pickup_object.dir/rule:
-	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 pickup_object/CMakeFiles/pickup_object.dir/rule
-.PHONY : pickup_object/CMakeFiles/pickup_object.dir/rule
-
-# Convenience name for target.
-pickup_object: pickup_object/CMakeFiles/pickup_object.dir/rule
-.PHONY : pickup_object
-
-# fast build rule for target.
-pickup_object/fast:
-	cd /home/cl3295/robot-test/build && $(MAKE) -f pickup_object/CMakeFiles/pickup_object.dir/build.make pickup_object/CMakeFiles/pickup_object.dir/build
-.PHONY : pickup_object/fast
-
-src/pickup_object.o: src/pickup_object.cpp.o
-.PHONY : src/pickup_object.o
-
-# target to build an object file
-src/pickup_object.cpp.o:
-	cd /home/cl3295/robot-test/build && $(MAKE) -f pickup_object/CMakeFiles/pickup_object.dir/build.make pickup_object/CMakeFiles/pickup_object.dir/src/pickup_object.cpp.o
-.PHONY : src/pickup_object.cpp.o
-
-src/pickup_object.i: src/pickup_object.cpp.i
-.PHONY : src/pickup_object.i
-
-# target to preprocess a source file
-src/pickup_object.cpp.i:
-	cd /home/cl3295/robot-test/build && $(MAKE) -f pickup_object/CMakeFiles/pickup_object.dir/build.make pickup_object/CMakeFiles/pickup_object.dir/src/pickup_object.cpp.i
-.PHONY : src/pickup_object.cpp.i
-
-src/pickup_object.s: src/pickup_object.cpp.s
-.PHONY : src/pickup_object.s
-
-# target to generate assembly for a file
-src/pickup_object.cpp.s:
-	cd /home/cl3295/robot-test/build && $(MAKE) -f pickup_object/CMakeFiles/pickup_object.dir/build.make pickup_object/CMakeFiles/pickup_object.dir/src/pickup_object.cpp.s
-.PHONY : src/pickup_object.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,12 +160,8 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... pickup_object"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... src/pickup_object.o"
-	@echo "... src/pickup_object.i"
-	@echo "... src/pickup_object.s"
 .PHONY : help
 
 

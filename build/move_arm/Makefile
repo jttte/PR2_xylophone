@@ -192,6 +192,90 @@ actionlib_generate_messages_py/fast:
 .PHONY : actionlib_generate_messages_py/fast
 
 # Convenience name for target.
+move_arm/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+.PHONY : move_arm/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_cpp: move_arm/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make move_arm/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+.PHONY : move_arm/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_lisp: move_arm/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make move_arm/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+.PHONY : move_arm/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_py: move_arm/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make move_arm/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : move_arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: move_arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make move_arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : move_arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: move_arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make move_arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : move_arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: move_arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make move_arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
 move_arm/CMakeFiles/move_arm.dir/rule:
 	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/move_arm.dir/rule
 .PHONY : move_arm/CMakeFiles/move_arm.dir/rule
@@ -204,6 +288,48 @@ move_arm: move_arm/CMakeFiles/move_arm.dir/rule
 move_arm/fast:
 	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/move_arm.dir/build.make move_arm/CMakeFiles/move_arm.dir/build
 .PHONY : move_arm/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+.PHONY : move_arm/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_cpp: move_arm/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+.PHONY : moveit_msgs_generate_messages_cpp
+
+# fast build rule for target.
+moveit_msgs_generate_messages_cpp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make move_arm/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build
+.PHONY : moveit_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+.PHONY : move_arm/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_lisp: move_arm/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+.PHONY : moveit_msgs_generate_messages_lisp
+
+# fast build rule for target.
+moveit_msgs_generate_messages_lisp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make move_arm/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
+.PHONY : moveit_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+.PHONY : move_arm/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_py: move_arm/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+.PHONY : moveit_msgs_generate_messages_py
+
+# fast build rule for target.
+moveit_msgs_generate_messages_py/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make move_arm/CMakeFiles/moveit_msgs_generate_messages_py.dir/build
+.PHONY : moveit_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 move_arm/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule:
@@ -232,6 +358,300 @@ moveit_ros_planning_gencfg: move_arm/CMakeFiles/moveit_ros_planning_gencfg.dir/r
 moveit_ros_planning_gencfg/fast:
 	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/moveit_ros_planning_gencfg.dir/build.make move_arm/CMakeFiles/moveit_ros_planning_gencfg.dir/build
 .PHONY : moveit_ros_planning_gencfg/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+.PHONY : move_arm/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_cpp: move_arm/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+.PHONY : object_recognition_msgs_generate_messages_cpp
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_cpp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make move_arm/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
+.PHONY : object_recognition_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+.PHONY : move_arm/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_lisp: move_arm/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+.PHONY : object_recognition_msgs_generate_messages_lisp
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_lisp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make move_arm/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
+.PHONY : object_recognition_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+.PHONY : move_arm/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_py: move_arm/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+.PHONY : object_recognition_msgs_generate_messages_py
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_py/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make move_arm/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build
+.PHONY : object_recognition_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+.PHONY : move_arm/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_cpp: move_arm/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+.PHONY : octomap_msgs_generate_messages_cpp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_cpp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make move_arm/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
+.PHONY : octomap_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+.PHONY : move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_lisp: move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+.PHONY : octomap_msgs_generate_messages_lisp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_lisp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make move_arm/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
+.PHONY : octomap_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+.PHONY : move_arm/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_py: move_arm/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+.PHONY : octomap_msgs_generate_messages_py
+
+# fast build rule for target.
+octomap_msgs_generate_messages_py/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make move_arm/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
+.PHONY : octomap_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : move_arm/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: move_arm/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make move_arm/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : move_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: move_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make move_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : move_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: move_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/roscpp_generate_messages_py.dir/build.make move_arm/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : move_arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: move_arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make move_arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : move_arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: move_arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make move_arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : move_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: move_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make move_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : move_arm/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: move_arm/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make move_arm/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : move_arm/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: move_arm/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make move_arm/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : move_arm/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: move_arm/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make move_arm/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+.PHONY : move_arm/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_cpp: move_arm/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+.PHONY : shape_msgs_generate_messages_cpp
+
+# fast build rule for target.
+shape_msgs_generate_messages_cpp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make move_arm/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
+.PHONY : shape_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+.PHONY : move_arm/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_lisp: move_arm/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+.PHONY : shape_msgs_generate_messages_lisp
+
+# fast build rule for target.
+shape_msgs_generate_messages_lisp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make move_arm/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
+.PHONY : shape_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/shape_msgs_generate_messages_py.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+.PHONY : move_arm/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_py: move_arm/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+.PHONY : shape_msgs_generate_messages_py
+
+# fast build rule for target.
+shape_msgs_generate_messages_py/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make move_arm/CMakeFiles/shape_msgs_generate_messages_py.dir/build
+.PHONY : shape_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : move_arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: move_arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make move_arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : move_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: move_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make move_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : move_arm/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: move_arm/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/std_msgs_generate_messages_py.dir/build.make move_arm/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 move_arm/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
@@ -317,6 +737,48 @@ tf_generate_messages_py/fast:
 	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/tf_generate_messages_py.dir/build.make move_arm/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
 
+# Convenience name for target.
+move_arm/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+.PHONY : move_arm/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_cpp: move_arm/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+.PHONY : trajectory_msgs_generate_messages_cpp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_cpp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make move_arm/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+.PHONY : trajectory_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+.PHONY : move_arm/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_lisp: move_arm/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+.PHONY : trajectory_msgs_generate_messages_lisp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_lisp/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make move_arm/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+.PHONY : trajectory_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+move_arm/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f CMakeFiles/Makefile2 move_arm/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+.PHONY : move_arm/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_py: move_arm/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+.PHONY : trajectory_msgs_generate_messages_py
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_py/fast:
+	cd /home/cl3295/robot-test/build && $(MAKE) -f move_arm/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make move_arm/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+.PHONY : trajectory_msgs_generate_messages_py/fast
+
 src/move_arm.o: src/move_arm.cpp.o
 .PHONY : src/move_arm.o
 
@@ -350,15 +812,45 @@ help:
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... edit_cache"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... move_arm"
+	@echo "... moveit_msgs_generate_messages_cpp"
+	@echo "... moveit_msgs_generate_messages_lisp"
+	@echo "... moveit_msgs_generate_messages_py"
 	@echo "... moveit_ros_manipulation_gencfg"
 	@echo "... moveit_ros_planning_gencfg"
+	@echo "... object_recognition_msgs_generate_messages_cpp"
+	@echo "... object_recognition_msgs_generate_messages_lisp"
+	@echo "... object_recognition_msgs_generate_messages_py"
+	@echo "... octomap_msgs_generate_messages_cpp"
+	@echo "... octomap_msgs_generate_messages_lisp"
+	@echo "... octomap_msgs_generate_messages_py"
 	@echo "... rebuild_cache"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... shape_msgs_generate_messages_cpp"
+	@echo "... shape_msgs_generate_messages_lisp"
+	@echo "... shape_msgs_generate_messages_py"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_lisp"
@@ -366,6 +858,9 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
+	@echo "... trajectory_msgs_generate_messages_cpp"
+	@echo "... trajectory_msgs_generate_messages_lisp"
+	@echo "... trajectory_msgs_generate_messages_py"
 	@echo "... src/move_arm.o"
 	@echo "... src/move_arm.i"
 	@echo "... src/move_arm.s"

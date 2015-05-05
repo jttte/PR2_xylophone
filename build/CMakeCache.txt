@@ -508,6 +508,18 @@ actionlib_DIR:PATH=/opt/ros/hydro/share/actionlib/cmake
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/hydro/share/actionlib_msgs/cmake
 
+//Value Computed by CMake
+audio_common_msgs_BINARY_DIR:STATIC=/home/cl3295/robot-test/build/audio_common_msgs
+
+//Value Computed by CMake
+audio_common_msgs_SOURCE_DIR:STATIC=/home/cl3295/robot-test/src/audio_common_msgs
+
+//The directory containing a CMake configuration file for bond.
+bond_DIR:PATH=/opt/ros/hydro/share/bond/cmake
+
+//The directory containing a CMake configuration file for bondcpp.
+bondcpp_DIR:PATH=/opt/ros/hydro/share/bondcpp/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/hydro/share/catkin/cmake
 
@@ -516,6 +528,9 @@ class_loader_DIR:PATH=/opt/ros/hydro/share/class_loader/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/hydro/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for dynamic_reconfigure.
+dynamic_reconfigure_DIR:PATH=/opt/ros/hydro/share/dynamic_reconfigure/cmake
 
 //The directory containing a CMake configuration file for eigen_conversions.
 eigen_conversions_DIR:PATH=/opt/ros/hydro/share/eigen_conversions/cmake
@@ -579,7 +594,7 @@ image_transport_DIR:PATH=/opt/ros/hydro/share/image_transport/cmake
 kdl_parser_DIR:PATH=/opt/ros/hydro/share/kdl_parser/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/hydro/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/hydro/lib/libtopic_tools.so
 
 //Value Computed by CMake
 mesh_builder_BINARY_DIR:STATIC=/home/cl3295/robot-test/build/mesh_builder-master
@@ -644,11 +659,23 @@ moveit_ros_planning_interface_DIR:PATH=/opt/ros/hydro/share/moveit_ros_planning_
 //The directory containing a CMake configuration file for moveit_ros_warehouse.
 moveit_ros_warehouse_DIR:PATH=/opt/ros/hydro/share/moveit_ros_warehouse/cmake
 
+//The directory containing a CMake configuration file for nodelet.
+nodelet_DIR:PATH=/opt/ros/hydro/share/nodelet/cmake
+
 //The directory containing a CMake configuration file for object_recognition_msgs.
 object_recognition_msgs_DIR:PATH=/opt/ros/hydro/share/object_recognition_msgs/cmake
 
 //The directory containing a CMake configuration file for octomap_msgs.
 octomap_msgs_DIR:PATH=/opt/ros/hydro/share/octomap_msgs/cmake
+
+//The directory containing a CMake configuration file for pcl_conversions.
+pcl_conversions_DIR:PATH=/opt/ros/hydro/share/pcl_conversions/cmake
+
+//The directory containing a CMake configuration file for pcl_msgs.
+pcl_msgs_DIR:PATH=/opt/ros/hydro/share/pcl_msgs/cmake
+
+//The directory containing a CMake configuration file for pcl_ros.
+pcl_ros_DIR:PATH=/opt/ros/hydro/share/pcl_ros/cmake
 
 //The directory containing a CMake configuration file for perception_msgs.
 perception_msgs_DIR:PATH=perception_msgs_DIR-NOTFOUND
@@ -662,8 +689,20 @@ pickup_object_SOURCE_DIR:STATIC=/home/cl3295/robot-test/src/pickup_object
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/hydro/share/pluginlib/cmake
 
+//Value Computed by CMake
+pr2_description_BINARY_DIR:STATIC=/home/cl3295/robot-test/build/pr2_description
+
+//Value Computed by CMake
+pr2_description_SOURCE_DIR:STATIC=/home/cl3295/robot-test/src/pr2_description
+
 //The directory containing a CMake configuration file for random_numbers.
 random_numbers_DIR:PATH=/opt/ros/hydro/share/random_numbers/cmake
+
+//The directory containing a CMake configuration file for rosbag.
+rosbag_DIR:PATH=/opt/ros/hydro/share/rosbag/cmake
+
+//The directory containing a CMake configuration file for rosbag_storage.
+rosbag_storage_DIR:PATH=/opt/ros/hydro/share/rosbag_storage/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/hydro/share/rosconsole/cmake
@@ -713,6 +752,15 @@ shape_msgs_DIR:PATH=/opt/ros/hydro/share/shape_msgs/cmake
 //The directory containing a CMake configuration file for shape_tools.
 shape_tools_DIR:PATH=/opt/ros/hydro/share/shape_tools/cmake
 
+//The directory containing a CMake configuration file for smclib.
+smclib_DIR:PATH=/opt/ros/hydro/share/smclib/cmake
+
+//Value Computed by CMake
+sound_play_BINARY_DIR:STATIC=/home/cl3295/robot-test/build/sound_play
+
+//Value Computed by CMake
+sound_play_SOURCE_DIR:STATIC=/home/cl3295/robot-test/src/sound_play
+
 //The directory containing a CMake configuration file for srdfdom.
 srdfdom_DIR:PATH=/opt/ros/hydro/share/srdfdom/cmake
 
@@ -739,6 +787,9 @@ tf2_ros_DIR:PATH=/opt/ros/hydro/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/hydro/share/tf/cmake
+
+//The directory containing a CMake configuration file for topic_tools.
+topic_tools_DIR:PATH=/opt/ros/hydro/share/topic_tools/cmake
 
 //The directory containing a CMake configuration file for trajectory_msgs.
 trajectory_msgs_DIR:PATH=/opt/ros/hydro/share/trajectory_msgs/cmake
@@ -914,7 +965,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=10
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

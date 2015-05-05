@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(scene_segmenter_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "" STREQUAL "")
+if(NOT "/home/cl3295/robot-test/devel/include;/home/cl3295/robot-test/src/scene_segmenter/include" STREQUAL "")
   set(scene_segmenter_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/cl3295/robot-test/devel/include;/home/cl3295/robot-test/src/scene_segmenter/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(scene_segmenter_EXPORTED_TARGETS "")
+set(scene_segmenter_EXPORTED_TARGETS "scene_segmenter_generate_messages_cpp;scene_segmenter_generate_messages_lisp;scene_segmenter_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${scene_segmenter_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -153,7 +153,7 @@ foreach(t ${scene_segmenter_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "perception_msgs")
+set(depends "perception_msgs;pcl_ros")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -182,7 +182,7 @@ foreach(depend ${depends})
   list(APPEND scene_segmenter_EXPORTED_TARGETS ${${scene_segmenter_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "scene_segmenter-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${scene_segmenter_DIR}/${extra})

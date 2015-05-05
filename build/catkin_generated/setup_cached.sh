@@ -8,4 +8,3 @@
 
 # modified environment variables
 export PWD="/home/cl3295/robot-test/build"
-export ROS_PACKAGE_PATH="/home/cl3295/robot-test/src:/home/cl3295/robot-test/src:/opt/ros/hydro/share:/opt/ros/hydro/stacks"

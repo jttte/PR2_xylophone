@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 
-
+import sys
 import roslib
+import rospy
+import actionlib
+
+from sound_play.msg import SoundRequest
+from sound_play.libsoundplay import SoundClient
 from pr2_controllers_msgs.msg import JointTrajectoryAction, JointTrajectoryGoal
 from trajectory_msgs.msg import JointTrajectoryPoint
-import actionlib
-import rospy
 
 
 
@@ -58,16 +61,54 @@ arguments:
 arm: specify which arm your are control on, should be either 'l_arm' or 'r_arm'
 shoulder_pos: specify the shoulder position.
 waist_pos: specify the goal position of the waist, leagal range for left/right wrist [-2.0, -0.1]
+note_number: the number of the note that was played
+
 Note: to use this range, the *_forearm_roll_joint should be set to -3.14 at first.
 '''
-def move_arm_wrist(arm, shoulder_pos, wrist_pos):
+def move_arm_wrist(arm, shoulder_pos, wrist_pos, note_number):
     rospy.init_node('arm_signal_node')
     arm = Arm(arm)
     #control *_wrist_flex_joint
     points = [shoulder_pos, 0.23, 0.1, -0.5, -3.14, wrist_pos, 0.1]
     arm.move(points)
+    generate_sound(note_number)
     points = [shoulder_pos, 0.23, 0.1, -0.5, -3.14, -0.1, 0.1]
     arm.move(points)
+
+
+
+
+"""
+The generate_sound function is used to play passed in note, and result in the voice in speaker.
+arguments:
+note: the note number of the note. Techinicially, each note number shoud have different voice assoicate with it.
+
+Attention:
+1. the audio file that was palyed by ros must in the format of "*.wav"
+2. sound_play node should be setup at first. Command: roslaunch sound_play soundplay_node.launch
+
+This function should be called when the hit xylphone action was finished, implies it should be called in move_actions.py
+"""
+
+def generate_sound(note_number):
+    #Since it was called in move_arm_wrist. A nodes called arm_signal_node has already been called, no need to initiate a    new node at here
+    #rospy.init_node('play', anonymous = True)
+
+    #the sounds dictionary for coorelating notes with wav file
+    sounds_dict = []
+    sounds_dict.append('/home/cl3295/robot-test/src/sound_play/sounds/note_1.wav')
+    sounds_dict.append('/home/cl3295/robot-test/src/sound_play/sounds/note_2.wav')
+    sounds_dict.append('/home/cl3295/robot-test/src/sound_play/sounds/note_3.wav')
+    sounds_dict.append('/home/cl3295/robot-test/src/sound_play/sounds/note_4.wav')
+    sounds_dict.append('/home/cl3295/robot-test/src/sound_play/sounds/note_5.wav')
+    sounds_dict.append('/home/cl3295/robot-test/src/sound_play/sounds/note_6.wav')
+    sounds_dict.append('/home/cl3295/robot-test/src/sound_play/sounds/note_7.wav')
+    sounds_dict.append('/home/cl3295/robot-test/src/sound_play/sounds/note_1.wav')
+
+    soundhandle = SoundClient()
+    soundhandle.playWave(sounds_dict[note_number-1])
+    
+
 
 
 '''

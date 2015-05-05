@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "pickup_object")
-set(pickup_object_MAINTAINER "jvarley <jvarley@todo.todo>")
+set(pickup_object_MAINTAINER "cl3295 <cl3295@todo.todo>")
 set(pickup_object_DEPRECATED "")
 set(pickup_object_VERSION "0.0.0")
 set(pickup_object_BUILD_DEPENDS )

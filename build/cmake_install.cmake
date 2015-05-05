@@ -89,14 +89,17 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/cl3295/robot-test/build/gtest/cmake_install.cmake")
-  INCLUDE("/home/cl3295/robot-test/build/mesh_builder-master/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/audio_common_msgs/cmake_install.cmake")
   INCLUDE("/home/cl3295/robot-test/build/move_arm/cmake_install.cmake")
   INCLUDE("/home/cl3295/robot-test/build/move_base/cmake_install.cmake")
   INCLUDE("/home/cl3295/robot-test/build/move_gripper/cmake_install.cmake")
   INCLUDE("/home/cl3295/robot-test/build/move_head/cmake_install.cmake")
   INCLUDE("/home/cl3295/robot-test/build/pickup_object/cmake_install.cmake")
   INCLUDE("/home/cl3295/robot-test/build/system_launch/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/pr2_description/cmake_install.cmake")
   INCLUDE("/home/cl3295/robot-test/build/hit_xylophone/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/sound_play/cmake_install.cmake")
+  INCLUDE("/home/cl3295/robot-test/build/scene_segmenter/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
