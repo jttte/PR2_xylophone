@@ -19,7 +19,7 @@ $ roslaunch system_launch pr2_gazebo_moveit.launch
 ```
 
 ### Approach xylophone
-Move PR2 to further behind in gazebo, then run the instructions below. PR2 will move back to the hitting position.
+Manually move PR2 to a place further behind, then run the instructions below. PR2 will move back to the hitting position.
 ```bash
 $ rosrun scene_segmenter scene_segmenter_node
 ```
