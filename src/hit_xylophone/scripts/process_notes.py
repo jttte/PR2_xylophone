@@ -15,7 +15,7 @@ import process_notes
 
 class NotesReader:
 	#this is the array for mapping note to shoulder joint position. pose(note_number) = pos_dict[note_number - 1]
-	pos_dict = [0.20, 0.13, 0, -0.135, 0.15, 0, -0.15, -0.25]
+	pos_dict = [0.185, 0.12, 0, -0.135, 0.13, 0, -0.125, -0.235]
 
 
 	#select the right arm acoording to the note

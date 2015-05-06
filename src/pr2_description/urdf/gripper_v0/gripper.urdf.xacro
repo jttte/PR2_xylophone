@@ -296,17 +296,19 @@
       <visual>
         <origin xyz="0 0 0" rpy="-1.57 -1 0" />
         <geometry>
-          <mesh filename="package://system_launch/models/mesh/new_stick.dae"   scale="0.17 0.17 0.17" />
+          <mesh filename="package://system_launch/models/mesh/new_stick.dae"   scale="0.18 0.18 0.18" />
         </geometry>
         
         <material name="Red" />
       </visual>
+<!--
       <collision>
         <origin xyz="0 0 0" rpy="-1.57 -1 0" />
         <geometry>
-          <mesh filename="package://system_launch/models/mesh/new_stick.dae"   scale="0.17 0.17 0.17" />
+          <mesh filename="package://system_launch/models/mesh/new_stick.dae"   scale="0.23 0.23 0.23" />
         </geometry>
       </collision>
+-->
     </link>
   
 
